@@ -19,7 +19,7 @@ function setup() {
 	groundObject = new ground(width/2,570,width,20);
 	dustbinObj   = new dustbin(1000,550);
 
-	paper1 = new Paper(300,320,20);
+	paper1 = new Paper(270,320,20);
   
 
 	Engine.run(engine);
@@ -38,7 +38,7 @@ function draw()
   dustbinObj.display();
   paper1.display();
 
-  keyPressed();
+  
 
 }
 
@@ -46,7 +46,7 @@ function keyPressed()
 {
   if (keyCode === UP_ARROW)
   {
-    Matter.Body.applyForce(paper1.body,paper1.body.position,{x:128, y:-15});
+    Matter.Body.applyForce(paper1.body,paper1.body.position,{x:80, y:-85});
   }
 
 }
