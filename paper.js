@@ -12,7 +12,7 @@ class Paper{
         this.y = y;
         this.r = r;
         this.image = loadImage("paper.png");
-        this.body = Bodies.circle(x,y,r,options);
+        this.body = Bodies.circle(x,y,(r/2)-7,options);
         World.add(world, this.body);
     }
 
